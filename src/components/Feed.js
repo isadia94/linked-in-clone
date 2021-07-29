@@ -7,7 +7,7 @@ import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import EventIcon from "@material-ui/icons/Event";
 import SubjectIcon from "@material-ui/icons/Subject";
 import Post from "./Post";
-import { Avatar } from "@material-ui/core";
+
 import { db } from "../firebase";
 import firebase from "firebase";
 

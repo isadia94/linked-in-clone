@@ -1,5 +1,5 @@
 import { Avatar } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import InteractionOption from "./InteractionOption";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";

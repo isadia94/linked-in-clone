@@ -8,6 +8,7 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { Avatar } from "@material-ui/core";
+import { useDispatch } from "react-redux";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -47,6 +48,9 @@ const HeaderSearch = styled.div`
   }
 `;
 const Header = () => {
+  const dispatch = useDispatch();
+
+  const logoutApp = () => {};
   return (
     <HeaderContainer>
       <HeaderLeft>
@@ -66,7 +70,11 @@ const Header = () => {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notifications" />
-        <HeaderOption avatar={<Avatar></Avatar>} title="me" />
+        <HeaderOption
+          onClick={logoutApp}
+          avatar={<Avatar></Avatar>}
+          title="me"
+        />
       </HeaderRight>
     </HeaderContainer>
   );
